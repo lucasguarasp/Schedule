@@ -1,0 +1,66 @@
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.deps.json
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.runtimeconfig.json
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.runtimeconfig.dev.json
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.pdb
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.Views.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.Views.pdb
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.csprojAssemblyReference.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.csproj.CoreCompileInputs.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorAssemblyInfo.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorAssemblyInfo.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.AssemblyInfoInputs.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.AssemblyInfo.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.TagHelpers.input.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.TagHelpers.output.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorCoreGenerate.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorTargetAssemblyInfo.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorTargetAssemblyInfo.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.Views.pdb
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.pdb
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.csproj.CopyComplete
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.deps.json
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.runtimeconfig.json
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.runtimeconfig.dev.json
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.dll
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.pdb
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.Views.dll
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\bin\Debug\netcoreapp2.1\Schedule.Views.pdb
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.csprojAssemblyReference.cache
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorAssemblyInfo.cache
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorAssemblyInfo.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.AssemblyInfoInputs.cache
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.AssemblyInfo.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.TagHelpers.input.cache
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.TagHelpers.output.cache
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorCoreGenerate.cache
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorTargetAssemblyInfo.cache
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.RazorTargetAssemblyInfo.cs
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.Views.pdb
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.dll
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.pdb
+C:\Users\Lucas\Desktop\Agenda\Schedule\Schedule\obj\Debug\netcoreapp2.1\Schedule.csproj.CopyComplete
