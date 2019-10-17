@@ -32,5 +32,10 @@ namespace Schedule.BL
         {
             return _context.SaveChangesAsync();
         }
+
+        public List<T> GetAll()
+        {
+            return _context.Set<T>().ToList();
+        }
     }
 }

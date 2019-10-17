@@ -26,8 +26,6 @@ namespace Schedule
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            Init.ConfigureServices(services, Configuration.GetConnectionString("DefaultConnection"));
-
             //services.AddDbContext<ApplicationDbContext>(options =>
             //   options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
@@ -38,6 +36,7 @@ namespace Schedule
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            Init.ConfigureServices(services, Configuration.GetConnectionString("DefaultConnection"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -52,10 +51,14 @@ namespace Schedule
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+                app.UseHsts();
             }
 
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseCors("SiteCorsPolicy");
+
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+            //app.UseCookiePolicy();
 
             app.UseMvc(routes =>
             {

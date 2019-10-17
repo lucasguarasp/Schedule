@@ -10,9 +10,9 @@ namespace Schedule.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ISchedule _schedule;
+        private readonly IScheduleRepository _schedule;
 
-        public HomeController(ISchedule schedule)
+        public HomeController(IScheduleRepository schedule)
         {
             _schedule = schedule;
         }
@@ -45,6 +45,16 @@ namespace Schedule.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
+        public async Task<JsonResult> GetEvents()
+        {
+            _schedule.Add(new Schedule { Name = "TEset", Description = "testando", DtStart = new DateTime(2019,10,25) });
+            await _schedule.Save();
+            var events = _schedule.GetAll().ToList();
+            return new JsonResult(events);
+
         }
     }
 }
