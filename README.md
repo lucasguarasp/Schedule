@@ -22,3 +22,7 @@ Desenvolver a interface gráfica utilizando o framework Angular.<br />
 ---
 Diferencial
 Utilizar o .NET Core (Ok)
+
+Para rodar o projeto
+---
+No Packege Manager Console, digitar: Update-Database

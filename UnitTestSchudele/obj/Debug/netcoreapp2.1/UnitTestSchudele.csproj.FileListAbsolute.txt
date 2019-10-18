@@ -1,0 +1,28 @@
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.csprojAssemblyReference.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.csproj.CoreCompileInputs.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyInfoInputs.cache
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyInfo.cs
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.deps.json
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.runtimeconfig.json
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.runtimeconfig.dev.json
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.pdb
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.dll
+\\fderivssv10\Folder Redirection$\lucas.aguiar\Desktop\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.pdb
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.deps.json
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.runtimeconfig.json
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.runtimeconfig.dev.json
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.dll
+D:\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.pdb
+D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.csprojAssemblyReference.cache
+D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.csproj.CoreCompileInputs.cache
+D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyInfoInputs.cache
+D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyInfo.cs
+D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.dll
+D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.pdb

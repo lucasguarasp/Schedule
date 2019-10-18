@@ -41,7 +41,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="col-lg-12">
                 <form class="col-md-12 form-horizontal">
                     <input type="hidden" id="Id" value="0" />
                     <div class="form-group">
@@ -120,8 +120,6 @@
                                 start: moment(v.dtStart),
                                 end: v.dtExit != null ? moment(v.dtExit) : null,
                                 description: v.description
-                                //color: v.ThemeColor,
-                                //allDay: v.IsFullDay
                             });
                         })
 
@@ -151,7 +149,7 @@
                         selectedEvent = calEvent;
                         $('#myModal #eventTitle').text(calEvent.title);
                         var $description = $('<div/>');
-                        //$description.append($('<p/>').html('<b>Birth:</b>' + calEvent.nascimento.format("DD-MMM-YYYY")));
+                        $description.append($('<p/>').html('<b>Birth:</b>' + calEvent.nascimento.format('DD-MMM-YYYY')));
                         $description.append($('<p/>').html('<b>Start:</b>' + calEvent.start.format("DD-MMM-YYYY HH:mm a")));
                         if (calEvent.end != null) {
                             $description.append($('<p/>').html('<b>End:</b>' + calEvent.end.format("DD-MMM-YYYY HH:mm a")));
@@ -196,7 +194,7 @@
                 openAddEditForm();
             })
             $('#btnDelete').click(function () {
-                if (selectedEvent != null && confirm('Are you sure?')) {
+                if (selectedEvent != null && confirm('Você tem certeza?')) {
                     $.ajax({
                         type: "POST",
                         url: '/home/DeleteEvent',
@@ -219,26 +217,14 @@
                 format: 'DD/MM/YYYY HH:mm A'
             });
 
-            //$('#chkIsFullDay').change(function () {
-            //    if ($(this).is(':checked')) {
-            //        $('#divEndDate').hide();
-            //    }
-            //    else {
-            //        $('#divEndDate').show();
-            //    }
-            //});
-
             function openAddEditForm() {
                 if (selectedEvent != null) {
                     $('#Id').val(selectedEvent.eventID);
                     $('#txtNome').val(selectedEvent.title);
-                    $('#txtNascimento').val(selectedEvent.nascimento != null ? selectedEvent.nascimento.format('DD/MM/YYYY') : '');
+                    $('#txtNascimento').val(new Date().toLocaleDateString());
                     $('#txtStart').val(selectedEvent.start.format('DD/MM/YYYY HH:mm'));
-                    //$('#chkIsFullDay').prop("checked", selectedEvent.allDay || false);
-                    //$('#chkIsFullDay').change();
                     $('#txtEnd').val(selectedEvent.end != null ? selectedEvent.end.format('DD/MM/YYYY HH:mm') : '');
                     $('#txtDescription').val(selectedEvent.description);
-                    //$('#ddThemeColor').val(selectedEvent.color);
                 }
                 $('#myModal').modal('hide');
                 $('#myModalSave').modal();
@@ -282,9 +268,7 @@
                     DtBirth: $('#txtNascimento').val().trim(),
                     DtStart: $('#txtStart').val().trim(),
                     DtExit: $('#txtEnd').val().trim(),
-                    Description: $('#txtDescription').val(),
-                    //ThemeColor: $('#ddThemeColor').val(),
-                    //IsFullDay: $('#chkIsFullDay').is(':checked')
+                    Description: $('#txtDescription').val()
                 }
                 SaveEvent(data);
                 // call function for submit data to the server
@@ -303,7 +287,7 @@
                         }
                     },
                     error: function () {
-                        alert('Failed');
+                        alert('Já existe uma agenda marcada nesse dia e horario');
                     }
                 })
             }

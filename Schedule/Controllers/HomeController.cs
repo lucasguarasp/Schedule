@@ -16,6 +16,7 @@ namespace Schedule.Controllers
         {
             _schedule = schedule;
         }
+
         public IActionResult Index()
         {
             // _schedule.Add();
@@ -47,12 +48,8 @@ namespace Schedule.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-
-        [HttpPost]
-        public async Task<JsonResult> SaveEvent(Schedule e)
+        public bool CheckDateRange(Schedule e)
         {
-            var status = false;
-
             var events = _schedule.GetAll().Select(c =>
             new
             {
@@ -62,35 +59,53 @@ namespace Schedule.Controllers
 
             //retorna caso esteja no mesmo range de marcaçao
             if (events.Any(x => e.DtStart >= x.DtStart && e.DtStart <= x.DtExit || e.DtExit <= x.DtExit && e.DtExit >= x.DtStart))
+                return true;
+
+            return false;
+        }
+
+        private bool IsValidDate(Schedule e)
+        {
+            List<Schedule> events = _schedule.GetAll();
+            Func<Schedule,bool> existDateInRange = x => e.DtStart >= x.DtStart && e.DtStart <= x.DtExit || e.DtExit <= x.DtExit && e.DtExit >= x.DtStart;
+            return events.Any(existDateInRange);
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> SaveEvent(Schedule calendary)
+        {
+            var status = false;
+
+            if (IsValidDate(calendary))
                 return null;
 
-            if (e.Id > 0)
+            if (calendary.Id > 0)
             {
                 //Update the event
-                var v = _schedule.GetAll().Where(a => a.Id == e.Id).FirstOrDefault();
+                var v = _schedule.GetAll().Where(a => a.Id == calendary.Id).FirstOrDefault();
                 if (v != null)
                 {
-                    v.Name = e.Name;
-                    v.DtBirth = e.DtBirth;
-                    v.DtStart = e.DtStart;
-                    v.DtExit = e.DtExit;
-                    v.Description = e.Description;
+                    v.Name = calendary.Name;
+                    v.DtBirth = calendary.DtBirth;
+                    v.DtStart = calendary.DtStart;
+                    v.DtExit = calendary.DtExit;
+                    v.Description = calendary.Description;
                 }
             }
             else
             {
-                _schedule.Add(e);
+                _schedule.Add(calendary);
             }
 
             await _schedule.Save();
 
             status = true;
 
-            return new JsonResult(status);
+            return new JsonResult(new { status });
             //return new JsonResult { Data = new { status = status } };
         }
 
-        public async Task<JsonResult> GetEvents()
+        public JsonResult GetEvents()
         {
             var events = _schedule.GetAll().ToList();
             return new JsonResult(events);
@@ -113,7 +128,7 @@ namespace Schedule.Controllers
 
             }
 
-            return new JsonResult(status);
+            return new JsonResult(new { status });
         }
     }
 }

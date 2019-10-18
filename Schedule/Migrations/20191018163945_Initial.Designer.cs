@@ -10,8 +10,8 @@ using Schedule.Models;
 namespace Schedule.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191016234202_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20191018163945_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

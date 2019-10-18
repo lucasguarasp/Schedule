@@ -1,7 +1,6 @@
 ﻿using System;
- 
 
-namespace Schedule 
+namespace Schedule
 {
     public class Schedule
     {
@@ -12,5 +11,10 @@ namespace Schedule
         public DateTime DtStart { get; set; }
         public DateTime DtExit { get; set; }
         public string Description { get; set; }
+
+        public bool CheckDate()
+        {
+            return DtStart > DtExit;
+        }
     }
 }
