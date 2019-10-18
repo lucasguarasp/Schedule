@@ -33,14 +33,22 @@ namespace Schedule.BL
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public List<T> GetAll()
-        {
-            return _context.Set<T>().ToList();
-        }
-
         public T GetById(int Id)
         {
             return _context.Set<T>().Find(Id);
+        }
+
+        public T GetWithCondition(Func<T, bool> predicate)
+        {
+            return _context.Set<T>().FirstOrDefault(predicate);
+        }
+
+        public List<T> GetAll(Func<T, bool> predicate = null)
+        {
+            if (predicate == null)
+                return _context.Set<T>().ToList();
+
+            return _context.Set<T>().Where(predicate).ToList();
         }
     }
 }

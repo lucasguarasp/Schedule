@@ -11,9 +11,9 @@ namespace Schedule.Interfaces
         void Update(T obj);
         void Delete(T obj);
         Task<bool> Save();
-
         T GetById(int Id);
 
-        List<T> GetAll();
+        T GetWithCondition(Func<T,bool> predicate);
+        List<T> GetAll(Func<T,bool> predicate = null);
     }
 }

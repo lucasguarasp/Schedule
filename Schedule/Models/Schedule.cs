@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Schedule
 {
@@ -34,6 +36,20 @@ namespace Schedule
             DtStart = schedule.DtStart;
             DtExit = schedule.DtExit;
             Description = schedule.Description;
+        }
+
+        public void IsValidDate(List<Schedule> allSchedules)
+        {
+            try
+            {
+                Func<Schedule,bool> existDateInRange = x =>  DtStart >= x.DtStart &&  DtStart <= x.DtExit ||  DtExit <= x.DtExit &&  DtExit >= x.DtStart;
+                if (allSchedules.Any(existDateInRange))
+                    throw new InvalidOperationException("Já existe uma consulta nessa data");
+            }
+            catch (Exception)
+            {
+                //faz nada
+            }
         }
     }
 }

@@ -74,21 +74,34 @@ namespace Schedule.Controllers
         [HttpPost]
         public async Task<JsonResult> SaveEvent(Schedule calendary)
         {
-            if (IsValidDate(calendary))
-                return null;
+            try
+            {
+                calendary.IsValidDate(_schedule.GetAll());
 
-            bool status = false;
+                //if (IsValidDate(calendary))
+                //    return null;
 
-            Schedule scheduleEdit = _schedule.GetById(calendary.Id);
+                bool status = false;
 
-            if (scheduleEdit != null)
-                scheduleEdit.Update(calendary);
-            else
-                _schedule.Add(calendary);
+                Schedule scheduleEdit = _schedule.GetById(calendary.Id);
+                //ou
+                //Schedule getById = _schedule.GetWithCondition(x => x.Id == calendary.Id);
+                //get all name = Lucas
+                //List<Schedule> getStartDate = _schedule.GetListWithCondition(x => x.Name == "Lucas");
 
-            status = await _schedule.Save();
+                if (scheduleEdit != null)
+                    scheduleEdit.Update(calendary);
+                else
+                    _schedule.Add(calendary);
 
-            return new JsonResult(new { status });
+                status = await _schedule.Save();
+
+                return new JsonResult(new { status });
+            }
+            catch (Exception e)
+            {
+                return new JsonResult(new { e });
+            }
         }
 
         public JsonResult GetEvents()
