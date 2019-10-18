@@ -28,9 +28,9 @@ namespace Schedule.BL
         {
             _context.Set<T>().Update(obj);
         }
-        public Task Save()
+        public async Task<bool> Save()
         {
-            return _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0;
         }
 
         public List<T> GetAll()

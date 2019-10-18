@@ -10,7 +10,7 @@ namespace Schedule.Interfaces
         void Add(T obj);
         void Update(T obj);
         void Delete(T obj);
-        Task Save();
+        Task<bool> Save();
 
         T GetById(int Id);
 
