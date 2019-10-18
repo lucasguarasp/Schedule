@@ -48,13 +48,72 @@ namespace Schedule.Controllers
         }
 
 
+        [HttpPost]
+        public async Task<JsonResult> SaveEvent(Schedule e)
+        {
+            var status = false;
+
+            var events = _schedule.GetAll().Select(c =>
+            new
+            {
+                c.DtStart,
+                c.DtExit
+            });
+
+            //retorna caso esteja no mesmo range de marcaçao
+            if (events.Any(x => e.DtStart >= x.DtStart && e.DtStart <= x.DtExit || e.DtExit <= x.DtExit && e.DtExit >= x.DtStart))
+                return null;
+
+            if (e.Id > 0)
+            {
+                //Update the event
+                var v = _schedule.GetAll().Where(a => a.Id == e.Id).FirstOrDefault();
+                if (v != null)
+                {
+                    v.Name = e.Name;
+                    v.DtBirth = e.DtBirth;
+                    v.DtStart = e.DtStart;
+                    v.DtExit = e.DtExit;
+                    v.Description = e.Description;
+                }
+            }
+            else
+            {
+                _schedule.Add(e);
+            }
+
+            await _schedule.Save();
+
+            status = true;
+
+            return new JsonResult(status);
+            //return new JsonResult { Data = new { status = status } };
+        }
+
         public async Task<JsonResult> GetEvents()
         {
-            _schedule.Add(new Schedule { Name = "TEset", Description = "testando", DtStart = new DateTime(2019,10,25) });
-            await _schedule.Save();
             var events = _schedule.GetAll().ToList();
             return new JsonResult(events);
 
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> DeleteEvent(int eventID)
+        {
+            var status = false;
+            var calendar = _schedule.GetById(eventID);
+
+            _schedule.Delete(calendar);
+
+            if (calendar != null)
+            {
+                _schedule.Delete(calendar);
+                await _schedule.Save();
+                status = true;
+
+            }
+
+            return new JsonResult(status);
         }
     }
 }

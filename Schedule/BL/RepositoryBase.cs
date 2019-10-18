@@ -37,5 +37,10 @@ namespace Schedule.BL
         {
             return _context.Set<T>().ToList();
         }
+
+        public T GetById(int Id)
+        {
+            return _context.Set<T>().Find(Id);
+        }
     }
 }

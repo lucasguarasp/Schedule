@@ -12,6 +12,8 @@ namespace Schedule.Interfaces
         void Delete(T obj);
         Task Save();
 
+        T GetById(int Id);
+
         List<T> GetAll();
     }
 }
