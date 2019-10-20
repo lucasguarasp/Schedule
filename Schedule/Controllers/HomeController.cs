@@ -77,7 +77,15 @@ namespace Schedule.Controllers
             try
             {
                 List<Schedule> getAllSchedule = _schedule.GetAll();
-                getAllSchedule.Remove(new Schedule() { Id = calendary.Id });
+
+                foreach (Schedule item in getAllSchedule)
+                {
+                    if (item.Id == calendary.Id)
+                    {
+                        getAllSchedule.Remove(item);
+                        break;
+                    }
+                }
 
                 //if (calendary.Id == 0)
                 //calendary.IsValidDate(_schedule.GetAll());
