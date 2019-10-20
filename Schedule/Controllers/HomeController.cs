@@ -64,19 +64,24 @@ namespace Schedule.Controllers
             return false;
         }
 
-        private bool IsValidDate(Schedule e)
-        {
-            List<Schedule> events = _schedule.GetAll();
-            Func<Schedule,bool> existDateInRange = x => e.DtStart >= x.DtStart && e.DtStart <= x.DtExit || e.DtExit <= x.DtExit && e.DtExit >= x.DtStart;
-            return events.Any(existDateInRange);
-        }
+        //private bool IsValidDate(Schedule e)
+        //{
+        //    List<Schedule> events = _schedule.GetAll();
+        //    Func<Schedule,bool> existDateInRange = x => e.DtStart >= x.DtStart && e.DtStart <= x.DtExit || e.DtExit <= x.DtExit && e.DtExit >= x.DtStart;
+        //    return events.Any(existDateInRange);
+        //}
 
         [HttpPost]
         public async Task<JsonResult> SaveEvent(Schedule calendary)
         {
             try
             {
-                calendary.IsValidDate(_schedule.GetAll());
+                List<Schedule> getAllSchedule = _schedule.GetAll();
+                getAllSchedule.Remove(new Schedule() { Id = calendary.Id });
+
+                //if (calendary.Id == 0)
+                //calendary.IsValidDate(_schedule.GetAll());
+                calendary.IsValidDate(getAllSchedule);
 
                 //if (IsValidDate(calendary))
                 //    return null;
@@ -100,7 +105,7 @@ namespace Schedule.Controllers
             }
             catch (Exception e)
             {
-                return new JsonResult(new { e });
+                return new JsonResult(new { msg = e.Message, erro = true });
             }
         }
 

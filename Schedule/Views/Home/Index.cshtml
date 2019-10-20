@@ -274,16 +274,21 @@
                     type: "POST",
                     url: '/home/SaveEvent',
                     data: data,
+                    dataType: 'JSON',
                     success: function (data) {
                         if (data.status) {
                             //Refresh the calender
                             FetchEventAndRenderCalendar();
                             $('#myModalSave').modal('hide');
                         }
+                        if (data.erro == true) {
+                            alert(data.msg);
+                        }
                     },
                     error: function () {
-                        alert('Já existe uma agenda marcada nesse dia e horario');
+                        alert('Failed');
                     }
+
                 })
             }
         })
