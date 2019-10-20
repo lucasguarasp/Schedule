@@ -1,7 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Schedule;
 using System;
+using System.Collections.Generic;
 
-namespace UnitTestSchudele
+namespace Schedule.Controllers
 {
     [TestClass]
     public class UnitTestRangeDate
@@ -12,18 +14,54 @@ namespace UnitTestSchudele
             DateTime DtStart = DateTime.Now;
             DateTime DtEnd = DateTime.Now.AddHours(1);
 
-            //bool expected = DtStart > DtEnd;
+            Schedule schedule = new Schedule();
+            List<Schedule> scheduleList = new List<Schedule>();
+            scheduleList.Add(new Schedule()
+            {
+                Name = "Lucas",
+                DtBirth = Convert.ToDateTime("26/12/1991"),
+                DtStart = Convert.ToDateTime("21/10/2019"),
+                DtExit = DtStart.AddHours(1),
+                Description = "Note Lucas"
+            });
+            scheduleList.Add(new Schedule()
+            {
+                Name = "Pedro",
+                DtBirth = Convert.ToDateTime("27/12/1991"),
+                DtStart = Convert.ToDateTime("21/10/2019"),
+                DtExit = DtStart.AddHours(1),
+                Description = "Note Pedro"
+            }); scheduleList.Add(new Schedule()
+            {
+                Name = "Thiago",
+                DtBirth = Convert.ToDateTime("28/12/1991"),
+                DtStart = Convert.ToDateTime("21/10/2019"),
+                DtExit = DtStart.AddHours(1),
+                Description = "Note Thiago"
+            });
 
-            ////Schedule check = new HomeController(DtStart, DtEnd);
-            //IScheduleRepository check;
+
+            ;
+
+            schedule.IsValidDate(scheduleList);
+
+            var actual = this;
+            Assert.AreEqual(this, actual, "Calendar cannot be created");
+        }
 
 
-            //// Act
-            //check.CheckDateRange(DtEnd);
+        [TestMethod]
+        public void EndStartDate()
+        {
+            DateTime DtStart = Convert.ToDateTime("21/10/2019");
+            DateTime DtEnd =  Convert.ToDateTime("21/10/2019 01:00:00");
+            bool expected = true;
 
-            //// Assert
-            //double actual = check.Balance;
-            //Assert.AreEqual(expected, actual, "Não pode adicionar esta data");
+            Schedule schedule = new Schedule();
+
+            bool actual = schedule.CheckDate(DtStart, DtEnd);
+
+            Assert.AreEqual(expected, actual, "Exit Date Greater than Start Date");
         }
     }
 }

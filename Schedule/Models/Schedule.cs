@@ -29,9 +29,10 @@ namespace Schedule
         public DateTime DtExit { get; set; }
         public string Description { get; set; }
 
-        public bool CheckDate()
+        public bool CheckDate(DateTime DtStart, DateTime DtExit)
         {
-            return DtStart > DtExit;
+            int isValidate  =  DtExit.CompareTo(DtStart);
+            return isValidate == 1;
         }
 
         public void Update(Schedule schedule)
