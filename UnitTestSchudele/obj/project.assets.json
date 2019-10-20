@@ -5827,23 +5827,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lucas.aguiar\\.nuget\\packages\\": {},
+    "C:\\Users\\lucas\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Schedule\\UnitTestSchudele\\UnitTestSchudele.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Schedule\\UnitTestSchudele\\UnitTestSchudele.csproj",
       "projectName": "UnitTestSchudele",
-      "projectPath": "D:\\Schedule\\UnitTestSchudele\\UnitTestSchudele.csproj",
-      "packagesPath": "C:\\Users\\lucas.aguiar\\.nuget\\packages\\",
-      "outputPath": "D:\\Schedule\\UnitTestSchudele\\obj\\",
+      "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Schedule\\UnitTestSchudele\\UnitTestSchudele.csproj",
+      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\Schedule\\UnitTestSchudele\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\lucas.aguiar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5880,6 +5880,7 @@
             "version": "[15.9.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

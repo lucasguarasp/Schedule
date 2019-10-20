@@ -26,3 +26,17 @@ D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyIn
 D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyInfo.cs
 D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.dll
 D:\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.deps.json
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.runtimeconfig.json
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.runtimeconfig.dev.json
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\bin\Debug\netcoreapp2.1\UnitTestSchudele.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.csprojAssemblyReference.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyInfoInputs.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.AssemblyInfo.cs
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\Schedule\UnitTestSchudele\obj\Debug\netcoreapp2.1\UnitTestSchudele.pdb
