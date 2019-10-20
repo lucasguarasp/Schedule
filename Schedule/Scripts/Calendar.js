@@ -110,7 +110,11 @@
     })
 
     $('#dtp1,#dtp2').datetimepicker({
-        format: 'DD/MM/YYYY HH:mm A'
+        format: 'DD/MM/YYYY HH:mm'
+    });
+
+    $('#dtNascimento').datetimepicker({
+        format: 'DD/MM/YYYY'
     });
 
     function openAddEditForm() {
@@ -133,29 +137,20 @@
             return;
         }
         if ($('#txtStart').val().trim() == "") {
-            alert('Birth date required');
-            return;
-        }
-        if ($('#txtStart').val().trim() == "") {
             alert('Start date required');
             return;
         }
-        if ($('#txtStart').val().trim() == "") {
+        if ($('#txtEnd').val().trim() == "") {
             alert('End date required');
             return;
         }
-        //if ($('#chkIsFullDay').is(':checked') == false && $('#txtEnd').val().trim() == "") {
-        //    alert('End date required');
-        //    return;
-        //}
-        else {
-            var startDate = moment($('#txtStart').val(), "DD/MM/YYYY HH:mm A").toDate();
-            var endDate = moment($('#txtEnd').val(), "DD/MM/YYYY HH:mm A").toDate();
-            //var nascimento = moment($('#txtNascimento').val(), "DD/MM/YYYY").toDate();
-            if (startDate > endDate) {
-                alert('Invalid end date');
-                return;
-            }
+
+        var startDate = moment($('#txtStart').val(), "DD/MM/YYYY HH:mm A").toDate();
+        var endDate = moment($('#txtEnd').val(), "DD/MM/YYYY HH:mm A").toDate();
+        if (startDate > endDate) {
+            alert('Invalid end date');
+            return;
+
         }
 
         var data = {
@@ -174,6 +169,8 @@
         $.ajax({
             type: "POST",
             url: '/home/SaveEvent',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
             data: data,
             success: function (data) {
                 if (data.status) {

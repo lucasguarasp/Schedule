@@ -6,6 +6,11 @@ namespace Schedule
 {
     public class Schedule
     {
+        public Schedule()
+        {
+
+        }
+
         public Schedule(int id, string name, DateTime dtBirth, DateTime dtStart, DateTime dtExit, string description)
         {
             Id = id;
@@ -46,9 +51,10 @@ namespace Schedule
                 if (allSchedules.Any(existDateInRange))
                     throw new InvalidOperationException("Já existe uma consulta nessa data");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 //faz nada
+                throw ex;
             }
         }
     }
